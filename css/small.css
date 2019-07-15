@@ -1,0 +1,470 @@
+/* Created by MITCH HAMILTON from HAMDEV.
+www.hamdev.net
+
+CSS Sections:
+    BACKGROUND COLOURS
+    HEADINGS
+    NAVIGATION
+    IMAGES
+    RESPONSIVE DESIGN
+    FLEX CONTAINER
+    FLEX CONTAINER 2
+    SOCIAL MEDIA
+ */
+
+/* BACKGROUND COLOURS */
+body {
+  background: #eeeeee;
+}
+
+div {
+  background: #222831;
+}
+
+/* HEADINGS */
+h1 {
+  color: #d55931;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  text-align: right;
+  padding-right: 24px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #d55931;
+  font-size: 2rem;
+}
+
+h3 {
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #d55931;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #eeeeee;
+  font-size: 1rem;
+  text-align: right;
+  padding-right: 24px;
+  padding-top: 0px;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border-top: 2px solid #d55931;
+}
+
+p{
+  word-wrap: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #eeeeee;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #eeeeee;
+  text-decoration:none;
+}
+
+.viewSiteBtn{
+  border-radius: 8px;
+  color: #d55931
+}
+
+a:hover {
+  color: #d55931;
+}
+
+/* NAVIGATION */
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #3f4652;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #d55931;
+}
+
+/* .navigation a:hover {
+  background: darken (#3f4652, 10%);
+} */
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.navigation:hover {
+  opacity: 0.7;
+}
+
+/* IMAGES */
+.navlogo {
+  width: 20%;
+  height: 20%;
+  padding-top: 10px;
+  padding-right: 280px;
+  padding-bottom: 10px;
+}
+
+.hamdevWorkstation {
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+  padding-right: 24px;
+}
+
+.hamdevLogo, .memoryGame, .orangeCar {
+  width: 100%;
+  height: 150px;
+}
+
+.starrySky:hover, .memoryGame:hover, .orangeCar:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVE DESIGN */
+/* Large */
+.container2 {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .container2 {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .container2 {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+/* FLEX CONTAINER */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  /* background: #222831; */
+  padding: 12px;
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+  color: #eeeeee;
+  text-align: center;
+}
+/* FLEX CONTAINER 2 */
+
+.flex-container2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item2 {
+  background: #3f4652;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: #d55931;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+
+/* SOCIAL MEDIA */
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* ABOUT PAGE CSS*/
+
+.aboutHeading{
+  padding-left: 10px;
+}
+
+
+
+.imageOfMe{
+  width: 30%;
+  align-items: center;
+  grid-area: 1 / 2;
+  padding-left: 250px;
+
+}
+
+/* Animated Projects Title */
+
+.wrapper {
+  /* position: relative; */
+  perspective: 20em;
+  display: grid;
+  transform-style:preserve-3d;
+}
+
+.circleCard {
+  border-radius: 25%;
+  grid-area: 1 / 2;
+  height: 200px;
+  width: 200px;
+  background: #d55931;
+  align-items: center;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.circleCard .enclosed {
+  background: #eee;
+  line-height: 0.8;
+  color: #d55931;
+  padding: 0 5px;
+  display: inline-block;
+  transform-origin: right center;
+}
+
+.wrapper:before {
+  border-radius:25%;
+  --bw: 2px;
+  grid-area: 1 / 2;
+  content: '';
+  height: 200px;
+  width: 200px;
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  border: var(--bw) solid #eee;
+}
+
+
+/* Projects Cards */
+
+@import "compass/css3";
+
+.flex-container-projects {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.projectCards {
+  border-radius:5%;
+  background-color:  #3f4652;
+  color: #d55931;
+  font-size: 14px;
+  line-height: 1.4em;
+  margin: 10px;
+  max-width: 210px;
+  min-width: 210px;
+  min-height: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.projectCards * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.projectCards img {
+  position: relative;
+  object-fit: cover;
+}
+
+.projectCards figcaption {
+  padding: 25px 20px 25px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.projectCards h3,
+.projectCards p {
+  margin: 0;
+  padding: 0;
+}
+
+.projectCards h3 {
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.projectCards .hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color:  #d55931;
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  opacity: 0;
+}
+
+.projectCards a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.projectCards:hover .hover,
+.projectCards.hover .hover {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 0.8;
+}
+
+.projectCards:hover figcaption,
+.projectCards.hover figcaption {
+  opacity: 1;
+  color: white;
+}
+
+.cardsH3{
+font-size: 1.2rem;
+text-transform: uppercase;
+}
+
+.cardsP{
+  font-size: 0.9rem;
+}
+
+.orangeA{
+  color: #d55931;
+}
+
+.orangeP{color: #d55931;
+}
+
+/* Loading Screen - Additional Content to RMIT Assignment*/
+
+#load_screen{
+  background: #222831;
+  opacity: 1;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#load_screen > div#loading {
+  color: #FFF;
+  width: 120px;
+  height: 24px;
+  margin-left: 10%;
+}
